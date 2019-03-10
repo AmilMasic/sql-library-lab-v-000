@@ -11,8 +11,8 @@ end
 
 
 def select_value_and_count_of_most_prolific_species
-  "SELECT species FROM characters
-  COUNT(species) GROUP BY species"
+  "SELECT COUNT(species) FROM characters
+  WHERE species = "human"
 end
 
 def select_name_and_series_subgenres_of_authors
